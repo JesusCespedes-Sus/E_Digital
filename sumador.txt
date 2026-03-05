@@ -1,0 +1,35 @@
+module sumador (A, B, Cin, S, Cout);
+
+input A;
+input B;
+input Cin;
+
+output reg S;
+output reg Cout;
+
+always @(*)
+begin
+
+if (A + B + Cin == 0) begin
+    S = 0;
+    Cout = 0;
+end
+
+else if (A + B + Cin == 1) begin
+    S = 1;
+    Cout = 0;
+end
+
+else if (A + B + Cin == 2) begin
+    S = 0;
+    Cout = 1;
+end
+
+else begin
+    S = 1;
+    Cout = 1;
+end
+
+end
+
+endmodule
