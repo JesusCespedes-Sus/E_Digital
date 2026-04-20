@@ -1,0 +1,388 @@
+$date
+	Mon Apr 20 00:43:01 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module Cont_TB_tb $end
+$var wire 1 ! LED $end
+$var reg 1 " A0 $end
+$var reg 1 # A1 $end
+$var reg 1 $ A2 $end
+$var reg 1 % A3 $end
+$var reg 1 & A4 $end
+$var reg 1 ' A5 $end
+$var reg 1 ( AnotS $end
+$var reg 1 ) CLK $end
+$var integer 32 * i [31:0] $end
+$scope module Cont0 $end
+$var wire 1 " A0 $end
+$var wire 1 # A1 $end
+$var wire 1 $ A2 $end
+$var wire 1 % A3 $end
+$var wire 1 & A4 $end
+$var wire 1 ' A5 $end
+$var wire 1 ( AnotS $end
+$var wire 1 ) CLK $end
+$var wire 1 ! LED $end
+$var wire 1 + s0 $end
+$var wire 1 , s1 $end
+$var wire 1 - s2 $end
+$var wire 1 . s3 $end
+$var wire 1 / s4 $end
+$var wire 1 0 s5 $end
+$var wire 1 1 s9 $end
+$var wire 1 2 s8 $end
+$var wire 1 3 s7 $end
+$var wire 1 4 s6 $end
+$var wire 1 5 s21 $end
+$var wire 1 6 s20 $end
+$var wire 1 7 s19 $end
+$var wire 1 8 s18 $end
+$var wire 1 9 s17 $end
+$var wire 1 : s16 $end
+$var wire 1 ; s15 $end
+$var wire 1 < s14 $end
+$var wire 1 = s13 $end
+$var wire 1 > s12 $end
+$var wire 1 ? s11 $end
+$var wire 1 @ s10 $end
+$var wire 1 A LED_temp $end
+$scope module DIG_Add_i0 $end
+$var wire 1 0 b $end
+$var wire 2 B temp [1:0] $end
+$var wire 1 3 s $end
+$var wire 1 C c_o $end
+$var wire 1 4 c_i $end
+$var wire 1 A a $end
+$var parameter 32 D Bits $end
+$upscope $end
+$scope module DIG_Add_i1 $end
+$var wire 1 / b $end
+$var wire 2 E temp [1:0] $end
+$var wire 1 @ s $end
+$var wire 1 4 c_o $end
+$var wire 1 1 c_i $end
+$var wire 1 2 a $end
+$var parameter 32 F Bits $end
+$upscope $end
+$scope module DIG_Add_i2 $end
+$var wire 1 . b $end
+$var wire 2 G temp [1:0] $end
+$var wire 1 = s $end
+$var wire 1 1 c_o $end
+$var wire 1 > c_i $end
+$var wire 1 ? a $end
+$var parameter 32 H Bits $end
+$upscope $end
+$scope module DIG_Add_i3 $end
+$var wire 1 - b $end
+$var wire 2 I temp [1:0] $end
+$var wire 1 : s $end
+$var wire 1 > c_o $end
+$var wire 1 ; c_i $end
+$var wire 1 < a $end
+$var parameter 32 J Bits $end
+$upscope $end
+$scope module DIG_Add_i4 $end
+$var wire 1 , b $end
+$var wire 2 K temp [1:0] $end
+$var wire 1 7 s $end
+$var wire 1 ; c_o $end
+$var wire 1 8 c_i $end
+$var wire 1 9 a $end
+$var parameter 32 L Bits $end
+$upscope $end
+$scope module DIG_Add_i5 $end
+$var wire 1 + b $end
+$var wire 1 ( c_i $end
+$var wire 2 M temp [1:0] $end
+$var wire 1 5 s $end
+$var wire 1 8 c_o $end
+$var wire 1 6 a $end
+$var parameter 32 N Bits $end
+$upscope $end
+$scope module DIG_D_FF_1bit_i10 $end
+$var wire 1 ) C $end
+$var wire 1 @ D $end
+$var wire 1 2 Q $end
+$var wire 1 O \~Q $end
+$var parameter 32 P Default $end
+$var reg 1 Q state $end
+$upscope $end
+$scope module DIG_D_FF_1bit_i11 $end
+$var wire 1 ) C $end
+$var wire 1 3 D $end
+$var wire 1 A Q $end
+$var wire 1 R \~Q $end
+$var parameter 32 S Default $end
+$var reg 1 T state $end
+$upscope $end
+$scope module DIG_D_FF_1bit_i6 $end
+$var wire 1 ) C $end
+$var wire 1 5 D $end
+$var wire 1 6 Q $end
+$var wire 1 U \~Q $end
+$var parameter 32 V Default $end
+$var reg 1 W state $end
+$upscope $end
+$scope module DIG_D_FF_1bit_i7 $end
+$var wire 1 ) C $end
+$var wire 1 7 D $end
+$var wire 1 9 Q $end
+$var wire 1 X \~Q $end
+$var parameter 32 Y Default $end
+$var reg 1 Z state $end
+$upscope $end
+$scope module DIG_D_FF_1bit_i8 $end
+$var wire 1 ) C $end
+$var wire 1 : D $end
+$var wire 1 < Q $end
+$var wire 1 [ \~Q $end
+$var parameter 32 \ Default $end
+$var reg 1 ] state $end
+$upscope $end
+$scope module DIG_D_FF_1bit_i9 $end
+$var wire 1 ) C $end
+$var wire 1 = D $end
+$var wire 1 ? Q $end
+$var wire 1 ^ \~Q $end
+$var parameter 32 _ Default $end
+$var reg 1 ` state $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 _
+b0 \
+b0 Y
+b0 V
+b0 S
+b0 P
+b1 N
+b1 L
+b1 J
+b1 H
+b1 F
+b1 D
+$end
+#0
+$dumpvars
+0`
+1^
+0]
+1[
+0Z
+1X
+0W
+1U
+0T
+1R
+0Q
+1O
+b0 M
+b0 K
+b0 I
+b0 G
+b0 E
+0C
+b1 B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+13
+02
+01
+10
+0/
+0.
+0-
+0,
+0+
+b0 *
+0)
+0(
+1'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#10000
+0R
+03
+1C
+b10 B
+1!
+1A
+1T
+1)
+b1 *
+#20000
+0)
+b10 *
+#30000
+13
+0C
+b1 B
+00
+0'
+b11 *
+#40000
+1)
+b100 *
+#50000
+0)
+b101 *
+#60000
+03
+1C
+b10 B
+14
+11
+1>
+1;
+18
+07
+0:
+0=
+0@
+1+
+b10 K
+1,
+b10 I
+1-
+b10 G
+1.
+b10 E
+1/
+05
+1'
+b10 M
+1(
+b110 *
+#70000
+1R
+13
+0C
+b1 B
+0!
+0A
+0T
+1)
+b111 *
+#80000
+0)
+b1000 *
+#90000
+03
+0>
+0=
+01
+0@
+b0 B
+04
+0;
+0,
+b0 I
+0-
+b0 G
+0.
+b0 E
+0/
+15
+b0 K
+08
+1"
+0'
+b1 M
+0(
+b1001 *
+#100000
+17
+0U
+05
+b1 K
+18
+b10 M
+16
+1W
+1)
+b1010 *
+#110000
+0)
+b1011 *
+#120000
+$dumpoff
+x`
+x^
+x]
+x[
+xZ
+xX
+xW
+xU
+xT
+xR
+xQ
+xO
+bx M
+bx K
+bx I
+bx G
+bx E
+xC
+bx B
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+bx *
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+b1100 *
