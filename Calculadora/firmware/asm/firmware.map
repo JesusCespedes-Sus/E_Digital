@@ -1,0 +1,92 @@
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+BRAM             0x0000000000000000 0x0000000000004000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Guión del enlazador y mapa de memoria
+
+
+everything      0x0000000000000000      0x4ce
+                0x0000000000000000                . = ALIGN (0x4)
+ call_test.o()
+ .text          0x0000000000000000       0x44 call_test.o
+ .data          0x0000000000000044       0x23 call_test.o
+ .bss           0x0000000000000067        0x0 call_test.o
+ .riscv.attributes
+                0x0000000000000067       0x1a call_test.o
+ get_number.o()
+ *fill*         0x0000000000000081        0x3 
+ .text          0x0000000000000084       0x80 get_number.o
+                0x0000000000000084                get_number
+ .data          0x0000000000000104        0x0 get_number.o
+ .bss           0x0000000000000104        0x0 get_number.o
+ .riscv.attributes
+                0x0000000000000104       0x1a get_number.o
+ bin2bcd.o()
+ *fill*         0x000000000000011e        0x2 
+ .text          0x0000000000000120       0xa8 bin2bcd.o
+                0x0000000000000120                bin2bcd
+ .data          0x00000000000001c8        0x0 bin2bcd.o
+ .bss           0x00000000000001c8        0x0 bin2bcd.o
+ .riscv.attributes
+                0x00000000000001c8       0x1a bin2bcd.o
+ bcd2bin.o()
+ *fill*         0x00000000000001e2        0x2 
+ .text          0x00000000000001e4       0x4c bcd2bin.o
+                0x00000000000001e4                bcd2bin
+ .data          0x0000000000000230        0x0 bcd2bin.o
+ .bss           0x0000000000000230        0x0 bcd2bin.o
+ .riscv.attributes
+                0x0000000000000230       0x1a bcd2bin.o
+ bin_to_bcd.o()
+ *fill*         0x000000000000024a        0x2 
+ .text          0x000000000000024c      0x10c bin_to_bcd.o
+                0x000000000000024c                bin_to_bcd
+ .data          0x0000000000000358        0x0 bin_to_bcd.o
+ .bss           0x0000000000000358        0x0 bin_to_bcd.o
+ .riscv.attributes
+                0x0000000000000358       0x1a bin_to_bcd.o
+ putchar.o()
+ *fill*         0x0000000000000372        0x2 
+ .text          0x0000000000000374       0x4c putchar.o
+                0x0000000000000374                putchar
+ .data          0x00000000000003c0        0x0 putchar.o
+ .bss           0x00000000000003c0        0x0 putchar.o
+ .riscv.attributes
+                0x00000000000003c0       0x1a putchar.o
+ getchar.o()
+ *fill*         0x00000000000003da        0x2 
+ .text          0x00000000000003dc       0x3c getchar.o
+                0x00000000000003dc                getchar
+ .data          0x0000000000000418        0x0 getchar.o
+ .bss           0x0000000000000418        0x0 getchar.o
+ .riscv.attributes
+                0x0000000000000418       0x1a getchar.o
+ putstring.o(.text)
+ *fill*         0x0000000000000432        0x2 
+ .text          0x0000000000000434       0x34 putstring.o
+                0x0000000000000434                putstring
+ *(.*)
+ .data          0x0000000000000468        0x0 putstring.o
+ .bss           0x0000000000000468        0x0 putstring.o
+ .riscv.attributes
+                0x0000000000000468       0x1a putstring.o
+ *fill*         0x0000000000000482        0x2 
+ .text          0x0000000000000484       0x30 test.o
+                0x0000000000000484                test
+ .data          0x00000000000004b4        0x0 test.o
+ .bss           0x00000000000004b4        0x0 test.o
+ .riscv.attributes
+                0x00000000000004b4       0x1a test.o
+LOAD call_test.o
+LOAD get_number.o
+LOAD bin2bcd.o
+LOAD bcd2bin.o
+LOAD bin_to_bcd.o
+LOAD putchar.o
+LOAD getchar.o
+LOAD putstring.o
+LOAD test.o
+OUTPUT(firmware.elf elf32-littleriscv)
