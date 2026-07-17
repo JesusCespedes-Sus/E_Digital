@@ -1,0 +1,11 @@
+// Clock 26
+IO_LOC  "clk"   E2;
+IO_PORT "clk"   IO_TYPE=LVCMOS33;
+
+// Reset
+IO_LOC  "reset" H10;
+IO_PORT "reset" IO_TYPE=LVCMOS33;
+
+// Salida WS2812
+IO_LOC  "dout"  J10;
+IO_PORT "dout"  IO_TYPE=LVCMOS33;
